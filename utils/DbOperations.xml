@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sql>
+	<AddPatient>Insert into patient_records values ({0},'{1}',{2},'{3}',{4},'{5}','{6}');</AddPatient>
+	<GiveFeedback>Update patient_records set patient_feedback ='{0}' where patient_name = '{1}'</GiveFeedback>
+	<GivePrescription>Update patient_records set patient_prescription ='{0}' where patient_name ='{1}'</GivePrescription>
+	<SearchPrescription>Select patient_prescription from patient_records where patient_name='{0}'</SearchPrescription>
+	<GetAllRecords>Select * from patient_records</GetAllRecords>
+</Sql>
